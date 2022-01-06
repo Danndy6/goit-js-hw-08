@@ -4,4 +4,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"TTyb":[function(require,module,exports) {
 "use strict";var e=t(require("lodash.throttle"));function t(e){return e&&e.__esModule?e:{default:e}}const r={form:document.querySelector(".feedback-form")},a="feedback-form-state",o=JSON.parse(localStorage.getItem(a));let l=o||{};function n(e){l[e.target.name]=e.target.value,localStorage.setItem(a,JSON.stringify(l))}function m(){l.email&&(r.form.elements[0].value=l.email),l.message&&(r.form.elements[1].value=l.message)}function s(e){e.preventDefault(),console.log(l),e.currentTarget.reset(),localStorage.removeItem(a),l={}}m(),r.form.addEventListener("input",(0,e.default)(n,500)),r.form.addEventListener("submit",s);
 },{"lodash.throttle":"FNyO"}]},{},["TTyb"], null)
-//# sourceMappingURL=/parcel-project-template/03-feedback.77921627.js.map
+//# sourceMappingURL=/goit-js-hw-08/03-feedback.77921627.js.map
